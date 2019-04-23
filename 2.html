@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<button>aaa</button>
+<button>bbb</button>
+	<script>
+		var btn = document.querySelectorAll('button');
+
+		for(var i=0;i<btn.length;i++) {
+			btn[i].onclick = function() {
+				console.log(new Date() + "每一次新增！")
+			}
+		}
+		
+	</script>
+</body>
+</html>
